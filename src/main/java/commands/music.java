@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 public class music extends ListenerAdapter {
     String prefix = "#";
     String url;
+
     public void onGuildMessageReceived(GuildMessageReceivedEvent event){
         if(!event.getMember().getUser().isBot()) {
             String messageRaw = event.getMessage().getContentRaw();
@@ -15,6 +16,7 @@ public class music extends ListenerAdapter {
 
             String charZero = String.valueOf(messageW[0]);
             if (charZero.equalsIgnoreCase(prefix)) {
+
                 if (messageL == 1) {
                     if (message[0].equalsIgnoreCase("#music")) {
                         event.getChannel().sendMessage("This is the music command type (#music help) for more.").queue();
