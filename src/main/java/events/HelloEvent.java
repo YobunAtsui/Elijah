@@ -19,6 +19,7 @@ public class HelloEvent extends ListenerAdapter {
                 if (message[i].equalsIgnoreCase("hello") || message[i].equalsIgnoreCase("hi")) {
                     String response = listOfGreetings[rando];
                     event.getChannel().sendMessage(response + " "+ name + "!").queue();
+                    System.out.println("Bot Response= " + response + " "+ name + "!");
                 }
             }
         }

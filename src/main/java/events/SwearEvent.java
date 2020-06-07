@@ -21,6 +21,7 @@ public class SwearEvent extends ListenerAdapter {
                     if(message[i].equalsIgnoreCase(curse))
                     {
                         event.getChannel().sendMessage( "You can't say that here "+ name + "!").queue();
+                        System.out.println("Bot Response= " + "You can't say that here "+ name + "!");
                         String messageId = event.getChannel().getLatestMessageId();
                         event.getChannel().deleteMessageById(messageId).queue();
                     }
