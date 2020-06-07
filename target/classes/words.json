@@ -1,0 +1,21 @@
+{
+  "configList": 
+[
+  {
+    "type": "greeting",
+    "words": [
+      "hi",
+      "hello",
+      "hola"
+    ]
+  },
+  {
+    "type": "swear",
+    "words": [
+      "fuck",
+      "asshole",
+      "shithead"
+    ]
+  }
+]
+}
