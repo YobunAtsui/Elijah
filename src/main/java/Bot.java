@@ -1,5 +1,5 @@
 import commands.math;
-//import commands.music;
+import commands.music;
 import domain.WordConfig;
 import events.HelloEvent;
 import events.SwearEvent;
@@ -19,7 +19,7 @@ public class Bot {
         jda.addEventListener(new HelloEvent());
         jda.addEventListener(new SwearEvent());
         jda.addEventListener(new math());
-//        jda.addEventListener(new music());
+        jda.addEventListener(new music());
         Gson g = new Gson();
 
 

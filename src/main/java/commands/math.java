@@ -28,8 +28,8 @@ public class math extends ListenerAdapter {
             if (charZero.equalsIgnoreCase(prefix)){
                 if(messageL == 1){
                     if(message[0].equalsIgnoreCase(("#calculate"))){
-                        event.getChannel().sendMessage("What would you like to calculate?").queue();
-                        System.out.println("Bot Response= " + "What would you like to calculate?");
+                        event.getChannel().sendMessage("This is the calculate command type (#calculate help) for more.").queue();
+                        System.out.println("Bot Response= " + "This is the calculate command type (#calculate help) for more.");
                     }
                 }
                 if(messageL == 2){
