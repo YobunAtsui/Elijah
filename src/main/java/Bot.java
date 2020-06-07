@@ -10,6 +10,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import static java.lang.System.*;
+
 public class Bot {
     public static void main(String args[])throws Exception{
         JDA jda = new JDABuilder( "NzE4OTIwODM3NTc4NjIxMTc3.Xtv5Qw.a243thqwhseblVGlg9hJE9J9WWU").build();
@@ -26,7 +28,7 @@ public class Bot {
 
         WordConfig config = g.fromJson(json,WordConfig.class);
 
-        System.out.println(config);
+        out.println(config);
 
 
     }
